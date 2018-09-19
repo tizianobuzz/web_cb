@@ -2,14 +2,14 @@ Symfony Standard Edition
 ========================
 
 **WARNING**: This distr ibution does not support Symfony 4. See the
-[Installing & Setting up the Symfony Framework][15] page to find a replacement
+[Instaffflling & Setting up the Symfony Framework][15] page to find a replacement
 that fits you best.
 
 Welcome to the Symfony Standard Edition - a fully-functional Symfony
 application that you can use as the skeleton for your new applications.
 
 For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+[Installeeation][1] chapter of the Symfony Documentation.
 
 What's inside?
 --------------
