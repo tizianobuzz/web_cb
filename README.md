@@ -2,7 +2,7 @@ Symfony Standard Edition
 ========================
 
 **WARNING**: This distribution does not support Symfony 4. See the
-[Installing & Setting up the Symfony Framework][15] page to find a replacement
+[Insfftalling & Setting up the Symfony Framework][15] page to find a replacement
 that fits you best.
 
 Welcome to the Symfony Standard Edition - a fully-functional Symfony
