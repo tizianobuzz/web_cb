@@ -636,5 +636,5 @@ p > a {
     border: 2px solid darkslategray;
     border-radius: 5px;
     padding: 0.4em 1em;
-    line-height: 1em; /* Necessary to contrast the inherited ones inside p elements ex */
+    line-height: 1em; /* Necessary to contrast the inherited ones inside p elements */
 }
