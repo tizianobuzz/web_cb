@@ -1,0 +1,141 @@
+:root {
+    --cb-color:#6e1d1c;
+}
+
+#header {
+    background: whitesmoke;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+}
+
+/* TOP SECTION */
+
+#top-bar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.header-container.top-bar {
+    padding: 0px 0 0px 0; /* To be used in case line-height becomes unsuitable */
+}
+
+.top-bar > span {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    line-height: 36px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#basic-info-span {
+    /* background: #7474BF;  fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);   Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to right, #348AC7, #7474BF); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    float: left;
+}
+
+#login-button-span {
+    /* background: #7474BF;  /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    float: right;    
+}
+
+
+/* LOGO SECTION */
+
+#logo-bar {
+    width: 100%;
+    /* background: blue; */
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.header-container.logo-bar {
+    /* height: 100px;  */
+}
+
+#logo {
+    vertical-align: middle;
+    display: inline-block;
+    height: 80px;
+    width: 150px;
+    margin: 10px 0 10px 0;
+    /* background: #4776E6;  /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+
+/* NAV SECTION */
+
+#nav-bar {
+    width: 100%;
+    background: var(--cb-color);
+    box-shadow: 5px 4px 10px #888888;
+}
+
+.header-container.nav-bar {
+    height: 44px; /* IN CONFILCT WITH a's padding */
+    overflow: visible; /* Necessary for the visibility of the menu dropdown div */
+}
+
+.header-container.nav-bar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow: visible; /* Necessary for the visibility of the menu dropdown div */
+}
+
+.header-container.nav-bar > ul > li {
+    float: left;
+    position: relative;
+    overflow: visible; /* Necessary for the visibility of the menu dropdown div */
+    /* background: #DA22FF;  /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.header-container.nav-bar > ul > li:hover {
+    /* background: yellowgreen; */
+}
+
+.header-container.nav-bar > ul > li > a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    /* padding: 14px 16px; */
+    line-height: 44px;
+    height: 44px;
+    padding: 0 16px;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+li > div {
+    z-index: 10;
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    /* background: yellow; */
+    display: none;
+}
+
+.dropdown-menu.visible {
+    display: block;
+}
+
+
+/* COMMON TO ALL SECTIONS */
+
+.header-container {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    /* background: #c21500;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to top right, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to top right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

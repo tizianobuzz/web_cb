@@ -1,0 +1,640 @@
+main > div {
+    margin-right: auto;
+    margin-left: auto;
+    /* position: relative; */
+    z-index: 0;
+}
+
+#welcome-iamges-container {
+    width: 100%;
+    /* height: 652px; */
+    position: relative;
+    /*background: #00c6ff;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    /* margin-bottom: 125px; To accomodate service boxes. 1/2 of a s.b. placed at 50% (now -100% including margins). TO BE UPDATED  */
+}
+
+#welcome-iamges-container > #img-txt {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+    /* height: 30%; */
+    z-index: 101;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 700;
+    font-size: 44px;
+    display: inline-block;
+}
+
+#welcome-iamges-container > #signal {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background: var(--cb-color);
+    color: white;
+    /* height: 30%; */
+    width: 25%;
+    z-index: 101;
+    font-family: 'Roboto', sans-serif;  
+}
+
+#welcome-iamges-container > div > h1 {
+    padding: 0 0.3em;
+}
+
+#welcome-iamges-container > div > a {
+    display: block;
+    padding: 0 0.3em 1em 0.3em;
+}
+
+#welcome-iamges-container > img {
+    height: auto;
+    width: 100%;
+}
+
+#service-boxes-container {
+    width: 1000px;
+    height: 280px;
+    position: relative;
+    /* transform: translateY(-20%); */
+    margin-top: -140px;
+    margin-bottom: 80px;
+    /* background: #7b4397;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.service-box {
+    height: 100%;
+    width: 200px;
+    position: relative;
+    color: whitesmoke;
+    background: rgba(110, 29, 29, 0.9);
+    border: 1px solid grey;
+    box-shadow: 2px 3px 3px #888888;
+    /* background: #1488CC;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.service-box > h2 {
+    margin: 0.5em auto 0.5em auto;
+    width: 92%;
+    text-align: center;  
+    font-size: 20px;
+    /* background: #A1FFCE;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    font-family: 'Roboto', sans-serif;  
+}
+
+.service-box > p {
+    margin: 0em 0.3em 0em 0.3em;
+    /* background: #56ab2f;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    font-family: 'IBM Plex Sans', sans-serif;  
+}
+
+.service-box > a {
+    /* background: #3a6186;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* margin-left: 0.2em; */
+    /* margin-top: 0.2em; */
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 0.5em;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.service-box > svg {
+    width: auto;
+    height: 30%;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    /* background: green; */
+}
+
+.welcome-section-container {
+    width: 100%;
+    position: relative;
+    color: var(--cb-color);
+    /*background: #085078;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to top right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to top right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.welcome-section-container > * > * > * > a {
+    font-size: 16px;
+    margin-top: 0.5em;
+}
+
+.welcome-section-container.cb-color > * > * > * > a {
+    color: white;
+    border-color: white;
+}
+
+.welcome-section-container:not(.cb-color) > * > * > * > a {
+    color: var(--cb-color);
+    border-color: var(--cb-color);
+}
+
+.welcome-section-container.cb-color {
+    background: var(--cb-color);
+    color: white;
+}
+
+.cb-color > .welcome-section::after {
+    content: "";
+    width: 40%;
+    height: 4px;
+    background: white;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 2px;
+}
+
+.welcome-section-container:not(.cb-color) > .welcome-section::after {
+    content: "";
+    width: 40%;
+    height: 4px;
+    background: var(--cb-color);
+    margin: 20px auto;
+    position: relative;
+    border-radius: 2px;
+}
+
+.welcome-section {
+    width: 1160px;
+    min-height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    /*background: #005C97;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to bottom right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to bottom right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#welcome-services { /* CONSIDER BORDER RAIDUS SETTINGS FOR THESE AND CALENDAR/NEWS BOXES. ENSURE CONSISTENCY EITHER WAY */
+    min-height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch ;
+}
+
+#welcome-services > div:not(.svg-container) {
+    flex-basis: 60%;
+}
+
+p > a {
+    padding-top: 0.1em;
+    display: block ;
+    float: left;
+    color: inherit;
+    text-decoration: underline;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#welcome-services > .svg-container {
+    /* display: inline-block; */
+    /*background: #DC2424;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    float: right;
+    width: 30%; 
+    overflow: hidden;
+    /* height: 70%; */
+    margin-right: 3%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    /* margin-left: 10%; */
+    vertical-align: middle;
+}
+
+#welcome-services > * > p {
+    /* background: #d53369;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #cbad6d, #d53369);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #cbad6d, #d53369); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    float: left;
+    margin: 0;
+    width: 100%;
+    /* margin-right: 10%; */
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+#welcome-services > * > h1 {
+    /*background: #50C9C3;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    flex-basis: 100%;
+    font-size: 36px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#welcome-calendar {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch ;
+}
+
+#welcome-calendar > div > div {
+    /* display: inline-block; */
+    /*background: #DC2424;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to top left, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to top left, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 20%;
+    height: 96%;
+    /* margin-right: 10%; */
+    /* margin-left: 10%; */
+    vertical-align: middle;
+}
+
+#welcome-calendar > div {
+    height: 70%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch ;
+}
+
+.arrow-button {
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 !important;
+    background: black !important;
+}
+
+#welcome-calendar > h1 {
+    /*background: #50C9C3;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to left, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to left, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    flex-basis: 100%;
+    margin-bottom: 0em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calendarbox {
+    border-radius: 2% 15%; /* Consdier 25% 10% as an option for both these AND welcome services. BE CONSISTENT THROUGHOUT THE WLCM PAGE */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--cb-color);
+    /* box-shadow: 0 0 3px 3px var(--cb-color); */
+}
+
+.calendarbox > div {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.calendarbox > .date-container {
+    display: block;
+    width: 100%;
+    height: 54px;
+    overflow: hidden;
+    background: var(--cb-color);
+}
+
+.calendarbox > .text-main-container {
+    height: 180px;
+}
+
+.calendarbox > .bottom-link-container {
+    height: 15%;
+    width: 100%;
+}
+
+.calendarbox > * > .day-label {
+    /*background: #de6161;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    float: left;
+    color: whitesmoke;
+    margin: 0.1em 0 0 0.1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px; /*CHECK TO UNIFY THIS. SEE SASS VARIABLES */
+}
+
+.calendarbox > canvas {
+    height: 100px;
+    width: 100%;
+    background: red;
+    position: absolute;
+}
+
+.calendarbox > *  > .month-label {
+    /*background: #de6161;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    float: left;
+    font-size: 24px;
+    margin-right: 0.5em;
+    line-height: 0.6em;
+    color: whitesmoke;
+    margin-top: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: right;
+}
+
+.calendarbox > * > .month-label > span {
+    font-size: 16px;
+    color: transparent; /* PARTIALLY REMOVED. May be not necessary */
+    font-family: inherit;
+}
+
+.calendarbox > .text-main-container > p {
+    /*background: #ff00cc;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to top right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to top right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    padding: 0;
+    margin-top: 0.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+}
+
+.calendarbox > .bottom-link-container > a {
+    color: white;
+    font-family: 'Roboto Condensed';
+    text-decoration: underline;
+    margin: auto;
+    padding: 0.5em 0 0.5em 0;
+    background: var(--cb-color);
+    /*background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* HOW TO */
+
+#welcome-howto {
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch ;
+    overflow: hidden;
+}
+
+#welcome-howto > div {
+    height: 70%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch ;
+}
+
+#welcome-howto > h1 {
+    /*background: #50C9C3;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    flex-basis: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+}
+
+.howtobox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--cb-color);
+    color: whitesmoke;
+    width: 45%;
+    height: 32%;
+    border-bottom: 2px solid white;
+}
+
+.howtobox > div {
+    display: block;
+    flex-basis: 12%;
+    margin-left: 0.6em;
+    /* background: yellow; */
+}
+
+.howtobox > span {
+    display: block;
+    /*background: #50C9C3;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding-left: 0.6em;
+}
+
+
+/* NEWS */
+
+#welcome-news {
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch ;
+    overflow-x: hidden;
+}
+
+#welcome-news > div > div:last-child {
+    /*background: #DC2424;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to top right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to top right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#welcome-news > div {
+    height: 280px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch ;
+}
+
+#welcome-news > h1 {
+    /*background: #50C9C3;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    flex-basis: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+}
+
+.newsbox {
+    width: 45%;
+    height: 32%;
+    overflow: hidden;
+    background: whitesmoke;
+    border-bottom: 1px solid var(--cb-color);
+    position: relative;
+}
+
+.newsbox > span {
+    display: inline-block;
+    /*background: #fffc00;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.newsbox > .newsbox-status-label {
+    float: left;
+    background: #ff3300;
+    color: whitesmoke;
+    font-family: 'IBM Plex Sans';
+    padding: 0.2em 0.4em;
+    margin: 0.3em 0.3em 0 0.3em;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.newsbox > .newsbox-date-label {
+    float: right;
+    font-family: 'Open Sans';
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0.3em 0.3em 0 0.3em;
+}
+
+.newsbox > p {
+    font-weight: 700;
+    display: block;
+    color: black;
+    font-family: 'Open Sans';
+    /*background: #ef32d9;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0.1em 0.1em 0.2em 0.1em;
+    margin: 0 0 0.2em 0;
+    clear: both;
+}
+
+.newsbox:not(.more) > a {
+    position: absolute;
+    color: black;
+    text-decoration: underline;
+    float: left;
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    right: 0.8em;
+    bottom: 0.6em;
+    /*background: #ff00cc;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.newsbox.more {
+    background: var(--cb-color);
+}
+
+.s {
+    width: 35%;
+    height: auto%;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.newsbox.more > a{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: underline;
+    display: block;
+    margin: 1.5em auto;
+}
+
+
+.welcome-service2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch ;
+    margin: 3em 0;
+}
+
+.welcome-service2 > div {
+    width: 25%;
+    /*background: #ff00cc;  /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.welcome-service2 > div > h2 {
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: darkslategray;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.welcome-service2 > div > p {
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: darkslategray;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.welcome-service2 > div > div {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.welcome-service2 > div > div > a, a.read-more { 
+    text-align: center;
+    /* width: 20%; */
+    margin: auto;
+    display: inline-block;
+    text-decoration: none;
+    color: darkslategray;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    border: 2px solid darkslategray;
+    border-radius: 5px;
+    padding: 0.4em 1em;
+    line-height: 1em; /* Necessary to contrast the inherited ones inside p elements */
+}

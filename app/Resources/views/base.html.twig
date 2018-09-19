@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Benvenuto!{% endblock %}</title>
+
+        {% block stylesheets %}
+        {% endblock %}
+    <style>
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,500i,600,700|Montserrat|Open+Sans:400,600,700|Raleway|Roboto+Condensed|Roboto:100,300,400,500,700,900');
+</style>
+
+        <script src="{{ asset('js/header.js') }}"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/base.css') }}">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <header id="header">
+        <div id="top-bar">
+            <div class="header-container top-bar">
+                <span id="basic-info-span">BASIC INFO HERE</span><span id="login-button-span">LOGIN HERE</span>
+            </div>
+        </div>
+        <div id="logo-bar">
+            <div class="header-container logo-bar">
+                <div id="logo">
+                {{ source('svg/mcdonalds-china.svg') }}
+                </div>
+                <span>OTHER STUFF</span>
+                <span style="line-height:100px;float:right;">EVEN MORE STUFF</span>
+            </div>
+        </div>
+        <div id="nav-bar">
+            <div class="header-container nav-bar">
+                <ul>
+                    <li id="nav1">
+                        <a onclick="clicked('nav1')">NAVtwo</a>
+                        <div class="dropdown-menu" >asset</div>
+                    </li>
+                    <li id="nav2">
+                        <a onclick="clicked('nav2')">NAVtwo</a>
+                        <div class="dropdown-menu" >asset</div>
+                    </li>
+                    <li id="nav3">
+                        <a onclick="clicked('nav3')">NAVtwo</a>
+                        <div class="dropdown-menu" >asset</div>
+                    </li> 
+                    <li id="nav4">
+                        <a onclick="clicked('nav4')">NAVtwo</a>
+                        <div class="dropdown-menu" >asset</div>
+                    </li>
+                    
+                    <li style="float:right;"><a>NAVrightFloat</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <body>
+
+        {% block body %}This is a body{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+    <footer>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </footer>
+</html>
