@@ -1,1 +1,1 @@
-Readme file is here!
+This website is under construction for a healthcare provider which is planning on offering web services to customers and staff members. Services run by this agenct include urgent care, clinic, and EMS.
