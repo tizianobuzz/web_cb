@@ -251,7 +251,6 @@ p > a {
 }
 
 #welcome-calendar {
-    height: 400px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -260,7 +259,7 @@ p > a {
     align-content: stretch ;
 }
 
-#welcome-calendar > div > div {
+#welcome-calendar > div > .calendarbox {
     /* display: inline-block; */
     /*background: #DC2424;  /* fallback for old browsers *
     background: -webkit-linear-gradient(to top left, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 *
@@ -284,10 +283,19 @@ p > a {
 }
 
 .arrow-button {
-    width: 50px !important;
-    height: 50px !important;
     margin: 0 !important;
-    background: black !important;
+    height: 50px;
+    width: 50px;
+}
+.arrow-button > i {
+    color: var(--cb-color);
+    font-size: 50px;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+
+.arrow-button > i:hover {
+    color: aqua; /* TODO UPDATE SVG TO FILL WITH EFFECT */
 }
 
 #welcome-calendar > h1 {
@@ -295,8 +303,8 @@ p > a {
     background: -webkit-linear-gradient(to left, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 *
     background: linear-gradient(to left, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     flex-basis: 100%;
-    margin-bottom: 0em;
-    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .calendarbox {
@@ -319,10 +327,20 @@ p > a {
     height: 54px;
     overflow: hidden;
     background: var(--cb-color);
+    position: relative;
+}
+
+.calendarbox > .date-container > .date-wrap {
+    position: absolute;
+    bottom: 0.3em;
+    left: 0.4em;
+    color: whitesmoke;
+    width: 75%;
 }
 
 .calendarbox > .text-main-container {
-    height: 180px;
+    height: 166px;
+    padding-top: 14px;
 }
 
 .calendarbox > .bottom-link-container {
@@ -330,13 +348,19 @@ p > a {
     width: 100%;
 }
 
-.calendarbox > * > .day-label {
+.calendarbox > .date-container > .event-logo-wrap {
+    width: 25%;
+    position: absolute;
+    right: 0em;
+    top: 0.3em;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.calendarbox > .date-container > .date-wrap > .day-label {
     /*background: #de6161;  /* fallback for old browsers *
     background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 *
     background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    float: left;
-    color: whitesmoke;
-    margin: 0.1em 0 0 0.1em;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 40px; /*CHECK TO UNIFY THIS. SEE SASS VARIABLES */
 }
@@ -348,18 +372,12 @@ p > a {
     position: absolute;
 }
 
-.calendarbox > *  > .month-label {
+.calendarbox > .date-container > .date-wrap  > .month-label {
     /*background: #de6161;  /* fallback for old browsers *
     background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 *
     background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    float: left;
     font-size: 24px;
-    margin-right: 0.5em;
-    line-height: 0.6em;
-    color: whitesmoke;
-    margin-top: 1em;
     font-family: 'Roboto Condensed', sans-serif;
-    text-align: right;
 }
 
 .calendarbox > * > .month-label > span {
@@ -373,10 +391,11 @@ p > a {
     background: -webkit-linear-gradient(to top right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 *
     background: linear-gradient(to top right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: block;
-    padding: 0;
-    margin-top: 0.5em;
+    padding-left: 0.5em;
     font-family: 'Open Sans', sans-serif;
     font-size: 21px;
+    padding-top: 0;
+    margin: 0;
 }
 
 .calendarbox > .bottom-link-container > a {
@@ -537,11 +556,11 @@ p > a {
     font-weight: 700;
     display: block;
     color: black;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans'; /*EU ECB WEBSITE USES DROID SANS MONOTYPE FROM FONTS.COM */
     /*background: #ef32d9;  /* fallback for old browsers *
     background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 *
     background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 0.1em 0.1em 0.2em 0.1em;
+    padding: 0.1em 0.1em 0.1em 0.4em;
     margin: 0 0 0.2em 0;
     clear: both;
 }

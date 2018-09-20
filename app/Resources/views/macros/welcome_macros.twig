@@ -81,15 +81,19 @@ C412.882,301.741,412.605,297.408,410.188,294.207L410.188,294.207z"/>
 
 {% endmacro newsbox%}
 
-{% macro calendarbox(day, month, year, title, introText, link) %}
+{% macro calendarbox(day, month, year, title, introText, link, logo) %}
 
 <div class="calendarbox">
 <!-- div may not be necessay for the date labels. Paddings could be used, or non-floating solutions -->
     <!--canvas onclick="draw(this);"></canvas-->
-    <div class="date-container"> <span class="day-label"> {{day|default('21')}} </span> <span class="month-label"> {{month|default('Dicembre')}} <br><span>{{year|default('1998')}} </span></span> </div> 
+    <div class="date-container">
+        <div class="date-wrap"><span class="day-label">{{day|default("21")}}</span> <span class="month-label">{{month|default("Dicembre")}}</span></div><div class="event-logo-wrap"><i class="fas fa-{{logo|default("graduation-cap")}}" style="font-size: 30px;"></i></div> <!-- update size should not be specified here TODO update from font-awesome to other service -->
+        
+        <!--span class="day-label"> {{day|default('21')}} </span> <span class="month-label"> {{month|default('Dicembre')}} <br><span>{{year|default('1998')}} </span></span--> 
+    </div> 
     <div class="text-main-container">
-    <p> {{title|default('TITOLO DELL"EVENTO VA QUI')}} </p>
-    <p> {{introText|default('Intro deve andare qui dell\' evento....')}} </p>
+    <p style="font-weight: 700;"> {{title|default('TITOLO DELL"EVENTO VA QUI')}} </p>
+    <p style="font-size: 18px"> {{introText|default('Intro deve andare qui dell\' evento....')}} </p>
     </div>
     <div class="bottom-link-container"><a href="{{ link|default('') }}">Scopri &gt;&gt; </a></div>
 </div>
