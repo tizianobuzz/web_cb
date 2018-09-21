@@ -1,0 +1,71 @@
+ul.navbar.main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+li.nav-item.main {
+    display: inline;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    overflow: hidden;
+    height: 45px;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+li.nav-item.main > a {
+    display: block;
+    padding: 0 1em;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+li.nav-item.main::after {
+    content: "";
+    width: 0px;
+    height: 15px;
+    border-right: 1px solid white;
+    border-radius: 1px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+li.nav-item.main.selected > a {
+    background: white;
+    color: red;
+}
+
+li.nav-item.main.selected::after {
+    content: "";
+    width: 0px;
+    height: 15px;
+    border-right: 1px solid red;
+    border-radius: 1px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.dd {
+    display: none;
+    width: 1260px;
+    height: 90px;
+    background: #328dd2;
+    border: 10px solid #bbb;
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+}

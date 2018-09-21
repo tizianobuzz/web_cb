@@ -63,7 +63,7 @@ class DefaultController extends Controller
      */
     public function indexAction($var = null)
     {
-        return $this->render('default/index.html.twig', [
+        return $this->render('default/indexECB.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
@@ -73,7 +73,7 @@ class DefaultController extends Controller
      */
     public function infoAction($var = null)
     {
-        return $this->render('default/info.html.twig', [
+        return $this->render('default/infoECB.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
