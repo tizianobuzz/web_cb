@@ -3,8 +3,56 @@
 {% block javascripts %}
 {% endblock %}
 
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/landingECB.css') }}">
+{% endblock %}
+
 {% block body %}
 
-<div style="width: 1280px; height: 400px; background: #dadada; margin: 0 auto;">welcome</div>
+<div id="" style="width: 1280px; height: 440px; background: #eee; margin: 0 auto; position: relative;">
+    <div id="bp-text-container">
+        <div class="bp-text-headline">HEADLINE</div>
+        <div class="bp-text-title">TITLE GOES HERE AS IT IS DECIDED righ souldj it go</div>
+        <p class="bp-text-p">This website is not part of any American Heart Assosiacion websites. It does not belong online for that reason. The logo's only purpose is testing before the insertion of the real logo.</p>
+        <ul class="bp-text-list"><li>TEXT</li></ul>
+    </div>
+    <div id="big-picture-container"><img id="big-picture" src="../emsad.jpg"></div>
+</div>
+
+<div id="" style="width: 1280px; min-height: 600px; background: white; margin: 10px auto 0 auto; position: relative; overflow: hidden;">
+    <div class="news-container">
+        <div class="news-tab">
+            <div class="news-tab-image"><img src="../ems-people.jpg"></div>
+            <div class="news-tab-date">10 Ottobre 2016 <span>EDUCATION</span></div>
+            <div class="news-tab-title">Titolo lungo questa volta per vedere se il wrap funziona</div>
+            <p class="news-tab-text">Are you a journalist interested in monetary policy? Sign up now for our journalist seminar on 20-21 November. You’ll take part in interactive sessiore you a journalist interested in monetary policy? Sign up now for our journalist seminar on 20-21 November. You’ll take part in interactive sessions with policymakers and experts, discussing the foundation of monetary policy and the tasks of the ECB.</p>
+            <ul class="news-tab-link"><li><i class="fas fa-plus"></i> LINK</li></ul>
+        </div>
+        <div class="news-tab">
+            <div class="news-tab-image"><img src="../dallas.jpg"></div>
+            <div class="news-tab-date">10 Ottobre 2016 <span>EDUCATION</span></div>
+            <div class="news-tab-title">Titolo</div>
+            <p class="news-tab-text">Are you a journalist interested in monetary policy? Sign up now for our journalist seminar on 20-21 November. You’ll take part in interactive sessions with policymakers and experts, discussing the foundation of monetary policy and the tasks of the ECB.</p>
+            <ul class="news-tab-link"><li><i class="fas fa-plus"></i> LINK</li></ul>
+        </div>
+        <div class="news-tab">
+            <div class="news-tab-image"><img src="../ems-people.jpg"></div>
+            <div class="news-tab-date">10 Ottobre 2016 <span>EDUCATION</span></div>
+            <div class="news-tab-title">Titolo</div>
+            <p class="news-tab-text">Are you a journalist interested in monetary policy? Sign up now for our journalist seminar on 20-21 November. You’ll take part in interactive sessions with policymakers and experts, discussing the foundation of monetary policy and the tasks of the ECB.</p>
+            <ul class="news-tab-link"><li><i class="fas fa-plus"></i> LINK</li></ul>
+            <ul class="news-tab-link"><li><i class="fas fa-share"></i> LINK2</li></ul>
+        </div>
+        <div class="news-tab">
+            <div class="news-tab-image"><img src="../dallas.jpg"></div>
+            <div class="news-tab-date">10 Ottobre 2016 <span>EDUCATION</span></div>
+            <div class="news-tab-title">Titolo</div>
+            <p class="news-tab-text">Are you a journalist interested in monetary policy? Sign up now for our journalist seminar on 20-21 November. You’ll take part in interactive sessions with policymakers and experts, discussing the foundation of monetary policy and the tasks of the ECB.</p>
+            <ul class="news-tab-link"><li><i class="fas fa-plus"></i> LINK</li></ul>
+        </div>
+    </div>
+</div>
+
+<div id="" style="width: 1280px; height: 400px; background: #eee; margin: 0 auto; position: relative; overflow: hidden;"></div>
 
 {% endblock %}

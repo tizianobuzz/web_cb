@@ -1,0 +1,137 @@
+#big-picture-container {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#big-picture {
+    height: 100%;
+}
+
+#bp-text-container {
+    height: auto;
+    width: calc(40% - 100px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#bp-text-container > div {
+    width: 100%;
+}
+
+.bp-text-headline {
+    font-size: 30px;
+}
+
+.bp-text-title {
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 600;
+    color: red;
+}
+
+.bp-text-p {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.bp-text-list {
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 600;
+    list-style: none;
+    padding-left: 0;
+}
+
+.bp-text-list > li::before {
+    content: ">";
+    
+}
+
+
+/* NEWS SECTION */
+
+.news-container {
+    width: 1210px;
+    position: relative;
+    min-height: 500px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    
+    display: flex;
+    flex-basis: auto;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-tab {
+    display: block;
+    min-height: 500px;
+    width: 260px;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-tab-image {
+    width: 260px;
+    height: 220px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.news-tab-date {
+    height: 25px;
+    font-size: 14px;
+    color: darkgray;
+    line-height: 25px;
+    width: 260px;
+}
+
+.news-tab-date > span {
+    font-weight: 600;
+    color: black;
+}
+
+.news-tab-title {
+    font-size: 21px;
+    line-height: 25px;
+    color: red;
+    font-weight: 500;
+    letter-spacing: 1.3;
+    min-height: 25px;
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+}
+
+.news-tab-text {
+    font-size: 14px;
+    line-height: 19px;
+    padding-top: 0;
+    margin-top: 0;
+    color: black;
+}
+
+.news-tab-link {
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 600;
+    list-style: none;
+    padding-left: 0;
+}
+
+.news-tab-link > li > i {
+    background: #328dd2;
+    color: white;
+    padding: 2px;
+    margin-right: 4px;
+}

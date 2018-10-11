@@ -1,3 +1,12 @@
+@font-face {
+font-family: 'FontAwesome';
+src: url('https://cdn2.hubspot.net/hubfs/HUBID/fontawesome-webfont.eot?v=4.7.0');
+src: url('https://cdn2.hubspot.net/hubfs/HUBID/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://cdn2.hubspot.net/hubfs/HUBID/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://cdn2.hubspot.net/hubfs/HUBID/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://cdn2.hubspot.net/hubfs/HUBID/Font-awesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://cdn2.hubspot.net/hubfs/HUBID/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+
 ul.navbar.main {
     list-style: none;
     margin: 0;
@@ -13,8 +22,8 @@ li.nav-item.main {
     display: inline;
     float: left;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
     overflow: hidden;
     height: 45px;
     padding: 0;
@@ -31,7 +40,14 @@ li.nav-item.main > a {
     color: white;
     position: relative;
 }
-
+/*
+li.nav-item.main > a::after {
+    content: "\f107";
+    padding-right: 14px;
+    padding-left: 10px;
+}
+TODO find font that has \f107 chevron down symbol!
+*/
 li.nav-item.main::after {
     content: "";
     width: 0px;
@@ -59,13 +75,142 @@ li.nav-item.main.selected::after {
     right: 0;
 }
 
+li.nav-item.main.active {
+    background: RGB(121, 150, 220);
+    
+}
+
+/* DROPDOWN */
+
 .dd {
     display: none;
-    width: 1260px;
-    height: 90px;
-    background: #328dd2;
-    border: 10px solid #bbb;
+    width: 1280px;
+    height: 230px;
+    background: RGBA(50,141,220,0.98);
+    box-shadow: 0px 2px 2px grey;
     position: absolute;
     top: 45px;
     z-index: 1;
+}
+
+.dd-main {
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.dd-list-wrapper {
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.dd-main-image {
+    height: 170px;
+    width: 280px;
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    overflow: hidden;
+}
+
+.dd-main-summary-wrap {
+    height: 180px;
+    width: 290px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.dd-main-title {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.5;
+    color: white;
+}
+
+.dd-main-text {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1.3;
+    line-height: 19px;
+    color: white;
+    padding-right: 10px;
+}
+
+
+.dd-text-list {
+    font-size: 14px;
+    letter-spacing: 1.3;
+    line-height: 19.6px;
+    font-weight: 400;
+    list-style: none;
+    padding-left: 0;
+    color: white;
+}
+
+.dd-list-half {
+    width: 280px;
+    height: 158px;
+    display: inline-block;
+    padding: 2px 10px;
+}
+
+.dd-list-half:first-child {
+    float: left;
+}
+
+.dd-list-half:last-child {
+    float: right;
+}
+
+.link-list1 {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link-list1 > li {
+    font-size: 14px;
+    letter-spacing: 1.3;
+    line-height: 40px;
+    font-weight: 400;
+    list-style: none;
+    color: white;
+    display: block;
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.border-after::after {
+    content: "";
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    background: #325dd2;
+    height: 1px;
+    border-radius: 1px;
+}
+
+.link-list1 > li:last-child {
+    border-bottom: none;
+}
+
+.link-list1 > li > i, li > i.fa-angle-right {
+    background: white;
+    margin-right: 5px;
+    padding: 2px 3px;
+    color: #328dd2;
 }
